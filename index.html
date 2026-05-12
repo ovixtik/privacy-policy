@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OVIXTIK — Privacy Policies</title>
+<meta name="description" content="Privacy policy pages for all OVIXTIK applications">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--gold:#d4af37;--gold-glow:rgba(212,175,55,.4);--dark:#0a0d18;--dark2:#131725;--dark3:#1c2235;--border:rgba(255,255,255,.06);--text:#fff;--text-muted:#8890aa;--text-dim:#5a627a}
+  html{scroll-behavior:smooth}
+  body{background:var(--dark);color:var(--text);font-family:'Cairo','Inter',sans-serif;min-height:100vh;overflow-x:hidden}
+  .bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(212,175,55,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
+  .bg-glow{position:fixed;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(212,175,55,.08) 0%,transparent 60%),radial-gradient(ellipse 40% 30% at 80% 80%,rgba(99,102,241,.05) 0%,transparent 60%),radial-gradient(ellipse 40% 30% at 20% 60%,rgba(16,185,129,.04) 0%,transparent 60%);pointer-events:none;z-index:0}
+  .container{max-width:880px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+  header{padding:80px 0 60px;text-align:center}
+  .brand-mark{display:inline-flex;align-items:center;gap:10px;padding:6px 18px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);border-radius:30px;margin-bottom:32px;backdrop-filter:blur(10px)}
+  .brand-mark .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold-glow);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
+  .brand-mark span{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:2px}
+  h1{font-size:clamp(36px,7vw,56px);font-weight:900;line-height:1.1;margin-bottom:16px;background:linear-gradient(135deg,#fff 0%,#d4af37 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-1px}
+  .subtitle{font-size:16px;color:var(--text-muted);max-width:480px;margin:0 auto;line-height:1.7}
+  .stats{display:flex;justify-content:center;gap:48px;margin-top:40px;padding-top:32px;border-top:1px solid var(--border)}
+  .stat{text-align:center}
+  .stat-num{font-family:'Inter',sans-serif;font-size:28px;font-weight:900;color:var(--gold);line-height:1}
+  .stat-label{font-size:12px;color:var(--text-dim);margin-top:6px;text-transform:uppercase;letter-spacing:1.5px}
+  .section-title{display:flex;align-items:center;gap:14px;margin:64px 0 24px}
+  .section-title::before{content:'';width:32px;height:2px;background:var(--gold)}
+  .section-title h2{font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+  .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .app{position:relative;background:var(--dark2);border:1px solid var(--border);border-radius:20px;padding:28px 24px;text-decoration:none;transition:all .3s cubic-bezier(.4,0,.2,1);overflow:hidden}
+  .app::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,var(--app-color,var(--gold)) 200%);opacity:0;transition:opacity .3s;z-index:0}
+  .app:hover{transform:translateY(-4px);border-color:var(--app-color,var(--gold));box-shadow:0 20px 40px -20px rgba(0,0,0,.5),0 0 0 1px var(--app-color,var(--gold))}
+  .app:hover::before{opacity:.04}
+  .app-content{position:relative;z-index:1}
+  .app-icon{width:72px;height:72px;border-radius:18px;margin-bottom:18px;overflow:hidden;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .3s;display:flex;align-items:center;justify-content:center}
+  .app-icon img{width:100%;height:100%;object-fit:cover}
+  .app:hover .app-icon{transform:scale(1.05) rotate(-3deg)}
+  .app-name{font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px}
+  .app-name-en{font-family:'Inter',sans-serif;font-size:12px;color:var(--text-dim);letter-spacing:1px;margin-bottom:14px;text-transform:uppercase}
+  .app-desc{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:20px;min-height:44px}
+  .app-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--border)}
+  .app-status{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:.5px}
+  .status-live{background:rgba(16,185,129,.15);color:#10b981}
+  .status-live::before{content:'';width:6px;height:6px;border-radius:50%;background:#10b981;animation:pulse 2s ease-in-out infinite}
+  .status-soon{background:rgba(255,255,255,.05);color:var(--text-dim)}
+  .app-arrow{color:var(--text-dim);font-size:18px;transition:transform .3s,color .3s}
+  .app:hover .app-arrow{transform:translateX(-4px);color:var(--app-color,var(--gold))}
+  .info-box{margin-top:60px;background:var(--dark2);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;gap:20px;align-items:flex-start}
+  .info-icon{width:44px;height:44px;border-radius:12px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+  .info-content h3{font-size:16px;color:var(--text);margin-bottom:6px}
+  .info-content p{font-size:13px;color:var(--text-muted);line-height:1.7}
+  .info-content a{color:var(--gold);text-decoration:none;font-weight:600}
+  .info-content a:hover{text-decoration:underline}
+  footer{margin-top:48px;padding:32px 0 48px;text-align:center;border-top:1px solid var(--border)}
+  footer p{font-size:13px;color:var(--text-dim)}
+  footer strong{color:var(--text-muted)}
+  .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px}
+  .footer-links a{color:var(--text-dim);text-decoration:none;font-size:13px;font-family:'Inter',sans-serif;transition:color .2s}
+  .footer-links a:hover{color:var(--gold)}
+  @media(max-width:540px){header{padding:48px 0 40px}.stats{gap:32px}.info-box{flex-direction:column;gap:14px;padding:20px}.apps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+<div class="container">
+
+  <header>
+    <div class="brand-mark"><div class="dot"></div><span>OVIXTIK</span></div>
+    <h1>سياسات الخصوصية</h1>
+    <p class="subtitle">الشفافية ركيزة أساسية في كل تطبيق نطوّره. تعرّف على كيفية حماية بياناتك في تطبيقاتنا.</p>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">04</div><div class="stat-label">Apps</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Local Data</div></div>
+      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Third Parties</div></div>
+    </div>
+  </header>
+
+  <div class="section-title"><h2>Our Applications · تطبيقاتنا</h2></div>
+
+  <div class="apps">
+
+    <a href="./hesabatik/" class="app" style="--app-color:#1a3a6b;">
+      <div class="app-content">
+        <div class="app-icon"><img src="./assets/hesabatik.png" alt="Hesabatik"></div>
+        <div class="app-name">حساباتك</div>
+        <div class="app-name-en">Hesabatik</div>
+        <p class="app-desc">إدارة الحسابات والمعاملات المالية</p>
+        <div class="app-footer">
+          <span class="app-status status-live">منشور</span>
+          <span class="app-arrow">←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="./invotik/" class="app" style="--app-color:#3b82f6;">
+      <div class="app-content">
+        <div class="app-icon"><img src="./assets/invotik.png" alt="Invotik"></div>
+        <div class="app-name">إنفوتك</div>
+        <div class="app-name-en">Invotik · Accounts & Invoices</div>
+        <p class="app-desc">إدارة الفواتير والحسابات للشركات</p>
+        <div class="app-footer">
+          <span class="app-status status-live">منشور</span>
+          <span class="app-arrow">←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="./walltik/" class="app" style="--app-color:#7a9577;">
+      <div class="app-content">
+        <div class="app-icon"><img src="./assets/walltik.png" alt="Walltik"></div>
+        <div class="app-name">والتك</div>
+        <div class="app-name-en">Walltik · Expense Tracker</div>
+        <p class="app-desc">تتبع المصاريف الشخصية اليومية</p>
+        <div class="app-footer">
+          <span class="app-status status-soon">قريباً</span>
+          <span class="app-arrow">←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="./debtik/" class="app" style="--app-color:#f59e0b;">
+      <div class="app-content">
+        <div class="app-icon"><img src="./assets/debtik.png" alt="Debtik"></div>
+        <div class="app-name">دبتك</div>
+        <div class="app-name-en">Debtik · Debt Tracker</div>
+        <p class="app-desc">إدارة وتتبع الديون والمستحقات</p>
+        <div class="app-footer">
+          <span class="app-status status-soon">قريباً</span>
+          <span class="app-arrow">←</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="info-box">
+    <div class="info-icon">🔐</div>
+    <div class="info-content">
+      <h3>التزامنا بخصوصيتك</h3>
+      <p>جميع تطبيقاتنا تحفظ بياناتك محلياً على جهازك فقط. لا نملك خوادم خارجية ولا نشارك بياناتك مع أي طرف ثالث. لأي استفسار: <a href="mailto:support@primepharma.tech">support@primepharma.tech</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:support@primepharma.tech">Contact</a>
+      <a href="https://github.com/ovixtik/privacy-policy" target="_blank">GitHub</a>
+    </div>
+    <p>© 2025 <strong>OVIXTIK</strong> — All rights reserved</p>
+  </footer>
+
+</div>
+</body>
+</html>
