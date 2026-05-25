@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - WALLTIK | سياسة الخصوصية</title>
+<meta name="description" content="Privacy Policy for WALLTIK - an offline-first personal finance app. No data collection, no tracking, all data stays on your device.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.75;
+    color: #1a2332;
+    background: #f5f7fa;
+    padding: 20px;
+  }
+  body.rtl {
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+  .container {
+    max-width: 880px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 50px 60px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  }
+  .lang-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: flex;
+    gap: 4px;
+  }
+  body.rtl .lang-switcher {
+    right: auto;
+    left: 20px;
+  }
+  .lang-btn {
+    padding: 8px 18px;
+    border: none;
+    background: transparent;
+    color: #7a8b9a;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.2s;
+  }
+  .lang-btn.active {
+    background: #5a8b7e;
+    color: #fff;
+  }
+  header {
+    border-bottom: 3px solid #5a8b7e;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    color: #1a2332;
+    font-size: 34px;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    color: #7a8b9a;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .meta {
+    background: #f0f4f3;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 22px 0;
+    font-size: 14px;
+    color: #3d4d5c;
+  }
+  .meta strong { color: #1a2332; }
+  h2 {
+    color: #1a2332;
+    font-size: 22px;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    padding-left: 14px;
+    border-left: 4px solid #5a8b7e;
+  }
+  body.rtl h2 {
+    padding-left: 0;
+    padding-right: 14px;
+    border-left: none;
+    border-right: 4px solid #5a8b7e;
+  }
+  h3 {
+    color: #2c3e50;
+    font-size: 17px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  p, li {
+    color: #3d4d5c;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  ul, ol {
+    margin-left: 26px;
+    margin-bottom: 16px;
+  }
+  body.rtl ul, body.rtl ol {
+    margin-left: 0;
+    margin-right: 26px;
+  }
+  li { margin-bottom: 8px; }
+  .highlight {
+    background: #e8f0ee;
+    padding: 18px 22px;
+    border-radius: 10px;
+    border-left: 4px solid #5a8b7e;
+    margin: 18px 0;
+  }
+  body.rtl .highlight {
+    border-left: none;
+    border-right: 4px solid #5a8b7e;
+  }
+  .highlight strong { color: #1a2332; }
+  .warning {
+    background: #fff8e6;
+    padding: 18px 22px;
+    border-radius: 10px;
+    border-left: 4px solid #d4a017;
+    margin: 18px 0;
+  }
+  body.rtl .warning {
+    border-left: none;
+    border-right: 4px solid #d4a017;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e0e6eb;
+  }
+  body.rtl th, body.rtl td {
+    text-align: right;
+  }
+  th {
+    background: #f0f4f3;
+    color: #1a2332;
+    font-weight: 600;
+  }
+  td { color: #3d4d5c; }
+  code {
+    background: #f0f4f3;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #5a8b7e;
+    font-family: 'Courier New', monospace;
+    direction: ltr;
+    display: inline-block;
+  }
+  a { color: #5a8b7e; text-decoration: none; font-weight: 500; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 50px;
+    padding-top: 26px;
+    border-top: 1px solid #e0e6eb;
+    text-align: center;
+    color: #7a8b9a;
+    font-size: 13px;
+  }
+  .contact-box {
+    background: #f8fafb;
+    padding: 26px;
+    border-radius: 12px;
+    margin-top: 16px;
+    border: 1px solid #e0e6eb;
+  }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+
+  @media (max-width: 600px) {
+    .container { padding: 30px 24px; margin: 60px auto 20px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    table { font-size: 13px; }
+    th, td { padding: 10px 8px; }
+    .lang-switcher { top: 12px; right: 12px; padding: 6px; }
+    body.rtl .lang-switcher { left: 12px; }
+    .lang-btn { padding: 6px 14px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('ar')">العربية</button>
+</div>
+
+<!-- ============ ENGLISH VERSION ============ -->
+<div class="lang-content active" id="lang-en">
+<div class="container">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">WALLTIK – Smart Expense Tracker</p>
+  </header>
+
+  <div class="meta">
+    <strong>Effective Date:</strong> May 25, 2026 &nbsp;|&nbsp;
+    <strong>Last Updated:</strong> May 25, 2026 &nbsp;|&nbsp;
+    <strong>App Version:</strong> 1.0.0
+  </div>
+
+  <p>
+    Welcome to <strong>WALLTIK (Smart Expense Tracker)</strong>, an offline-first personal finance application
+    developed by <strong>Ovixtik</strong>. This Privacy Policy explains how WALLTIK handles information when you use the application.
+  </p>
+
+  <div class="highlight">
+    <strong>Our Core Promise:</strong> WALLTIK is a <strong>fully offline application</strong>.
+    All your financial data is stored exclusively on your device. We do not collect, transmit, sell, share, or have access
+    to any of your personal or financial information. No account, email, or sign-up is required.
+  </div>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>1.1 What WALLTIK Stores on Your Device</h3>
+  <p>All data is stored locally in the app's private storage and is never transmitted to any server. The data includes:</p>
+  <ul>
+    <li><strong>Financial Records:</strong> Expenses, income, debts, savings, and category information you manually enter.</li>
+    <li><strong>App Preferences:</strong> Language, currency, theme mode, primary color, and notification settings.</li>
+    <li><strong>Security Settings:</strong> Your 4-digit PIN code and biometric unlock preferences.</li>
+    <li><strong>Optional Receipt Photos:</strong> Images you choose to attach to expense records (Premium feature).</li>
+    <li><strong>Setup Flags:</strong> First-run status, onboarding completion, and migration markers.</li>
+  </ul>
+
+  <h3>1.2 What WALLTIK Does NOT Collect</h3>
+  <ul>
+    <li>No personal identifiers (name, email, phone number, address).</li>
+    <li>No device identifiers (IMEI, advertising ID, installation ID).</li>
+    <li>No location data of any kind.</li>
+    <li>No contacts, calendar entries, SMS, or call logs.</li>
+    <li>No usage analytics or behavioral metrics.</li>
+    <li>No crash reports or error telemetry.</li>
+    <li>No account credentials — the app has no login or sign-up screen.</li>
+  </ul>
+
+  <h2>2. Data Storage Locations</h2>
+
+  <h3>2.1 Local SQLite Database</h3>
+  <p>Stored in the app's private directory and inaccessible to other apps. Contains tables for expenses, income, income history, custom categories, debts, and deleted debts (trash bin).</p>
+
+  <h3>2.2 Local Key-Value Storage</h3>
+  <p>Used for preferences and settings such as language code, theme mode, PIN, biometric toggle, and Premium status flag.</p>
+
+  <h3>2.3 Private File Storage</h3>
+  <p>Receipt photos attached to expenses are stored in the app's private documents directory and are not visible to other applications.</p>
+
+  <h2>3. Permissions Requested</h2>
+  <p>WALLTIK requests the following Android permissions only when needed for specific features:</p>
+
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Purpose</th><th>When Requested</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Camera</strong></td><td>Capture receipt photos</td><td>Only when you tap "attach receipt"</td></tr>
+      <tr><td><strong>Storage / Media Images</strong></td><td>Pick existing photos or backup files</td><td>Only when you select an image or restore a backup</td></tr>
+      <tr><td><strong>Biometric / Fingerprint</strong></td><td>Unlock app with fingerprint or face</td><td>Only when you enable biometric unlock in settings</td></tr>
+      <tr><td><strong>Notifications</strong></td><td>Show local reminders and spending alerts</td><td>On first attempt to send a notification (Android 13+)</td></tr>
+      <tr><td><strong>Vibration</strong></td><td>Haptic feedback on PIN keypad</td><td>Implicit, no user prompt</td></tr>
+      <tr><td><strong>Internet</strong></td><td>Open external URLs in your system browser</td><td>Only when you tap a link in Settings</td></tr>
+    </tbody>
+  </table>
+
+  <p>WALLTIK does <strong>not</strong> request background service, boot completion, wake lock, SMS, or phone permissions.</p>
+
+  <h2>4. Backup and Restore (User-Initiated Only)</h2>
+
+  <h3>4.1 Creating a Backup</h3>
+  <p>When you tap "Backup" in Settings, WALLTIK creates a ZIP file containing your database and receipt photos. This file is passed to your device's system share sheet — you choose where to send it (Gmail, Drive, USB, etc.). <strong>The app itself never uploads this file anywhere.</strong></p>
+
+  <h3>4.2 Restoring a Backup</h3>
+  <p>You can select a ZIP file from your device through the system file picker. WALLTIK replaces the local database and receipt files with the backup contents. No data leaves your device during this process.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>WALLTIK does <strong>not</strong> integrate with any of the following:</p>
+  <ul>
+    <li>No Firebase, Google Analytics, or Crashlytics</li>
+    <li>No AdMob or any advertising networks</li>
+    <li>No Mixpanel, Sentry, or other tracking SDKs</li>
+    <li>No social media login or sharing SDKs</li>
+    <li>No cloud sync or backup services</li>
+  </ul>
+
+  <p>The app uses only open-source Flutter packages for local functionality. None of these packages communicate over the network on behalf of WALLTIK.</p>
+
+  <h2>6. External Links</h2>
+  <p>WALLTIK contains links in the Settings screen that open your system browser. The app itself does <strong>not</strong> send any data to these URLs — your browser handles them independently:</p>
+  <ul>
+    <li>Link to the developer's other apps on Google Play</li>
+    <li>Link to rate WALLTIK on Google Play</li>
+    <li>Link to this Privacy Policy</li>
+    <li>Email link to contact support</li>
+  </ul>
+
+  <h2>7. Premium Subscription Notice</h2>
+  <div class="warning">
+    <strong>Important Disclosure:</strong> The Premium upgrade feature in the current version of WALLTIK is a
+    <strong>local flag only</strong>. There is no real payment processing or Google Play Billing integration at this time.
+    No payment information is collected or transmitted. Real in-app purchases may be introduced in future versions, at which point
+    transactions will be handled exclusively by <strong>Google Play Billing</strong> in accordance with
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+  </div>
+
+  <h2>8. Security</h2>
+  <ul>
+    <li><strong>PIN Lock:</strong> Optional 4-digit PIN to access the app.</li>
+    <li><strong>Biometric Authentication:</strong> Optional fingerprint or face unlock using your device's built-in security.</li>
+    <li><strong>App-Private Storage:</strong> All data is isolated and protected by the Android operating system.</li>
+  </ul>
+
+  <div class="warning">
+    <strong>Transparency Note:</strong> In the current version, the PIN is stored in local key-value storage in plain text.
+    This will be migrated to secure storage in a future update. Since the data never leaves your device, the practical risk is limited to physical device access by another person.
+  </div>
+
+  <h2>9. Data Retention and Deletion</h2>
+  <p>Your data remains on your device for as long as WALLTIK is installed. To delete all your data:</p>
+  <ul>
+    <li>Uninstall the app, OR</li>
+    <li>Clear app data through your device's Settings → Apps → WALLTIK → Storage → Clear Data</li>
+  </ul>
+  <p>Both actions permanently remove all financial records, settings, and receipt photos. Backup files you saved externally are not affected and remain under your control.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>
+    WALLTIK does not target children under the age of 13 and contains no third-party content directed at children.
+    Since the app does not collect any personal information from any user, it does not knowingly collect any data from children.
+    The minimum supported Android version is 5.0 (Lollipop).
+  </p>
+
+  <h2>11. International Users and Compliance</h2>
+  <p>
+    WALLTIK supports 11 languages (Arabic, English, Spanish, Italian, German, French, Portuguese, Turkish, Chinese, Hindi, Persian)
+    and is available worldwide. Because no data is transmitted or stored on external servers, there are no international data transfers.
+  </p>
+  <p>WALLTIK is designed to comply with major privacy regulations including:</p>
+  <ul>
+    <li><strong>General Data Protection Regulation (GDPR)</strong></li>
+    <li><strong>California Consumer Privacy Act (CCPA)</strong></li>
+    <li><strong>Google Play Data Safety</strong> requirements</li>
+    <li><strong>Children's Online Privacy Protection Act (COPPA)</strong></li>
+  </ul>
+
+  <h2>12. Your Rights</h2>
+  <p>You have complete control over your data at all times:</p>
+  <ul>
+    <li><strong>Access:</strong> All your data is visible inside the app.</li>
+    <li><strong>Modification:</strong> Edit or delete any record at any time.</li>
+    <li><strong>Export:</strong> Create backup files whenever you wish.</li>
+    <li><strong>Deletion:</strong> Uninstall the app to remove all data permanently.</li>
+    <li><strong>Portability:</strong> Backup files can be saved or transferred freely.</li>
+  </ul>
+
+  <h2>13. Changes to This Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy occasionally to reflect changes in the app or applicable laws.
+    The "Last Updated" date at the top of this page indicates when the policy was last revised.
+    Significant changes will be communicated through the app's Settings screen and the Google Play listing.
+    Continued use of WALLTIK after such updates constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>14. Contact Information</h2>
+  <div class="contact-box">
+    <p>For any questions, concerns, or requests regarding this Privacy Policy or the application, please contact us:</p>
+    <p>
+      <strong>Developer:</strong> Ovixtik<br>
+      <strong>Support Email:</strong> <a href="mailto:support@primepharma.tech?subject=WALLTIK%20Privacy%20Inquiry">support@primepharma.tech</a><br>
+      <strong>Application:</strong> WALLTIK – Smart Expense Tracker<br>
+      <strong>Package:</strong> <code>com.naifoo.smart_expense</code>
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Ovixtik. All rights reserved.<br>
+    This Privacy Policy applies exclusively to the WALLTIK mobile application.
+  </footer>
+
+</div>
+</div>
+
+<!-- ============ ARABIC VERSION ============ -->
+<div class="lang-content" id="lang-ar">
+<div class="container">
+
+  <header>
+    <h1>سياسة الخصوصية</h1>
+    <p class="subtitle">WALLTIK – تطبيق متابعة المصاريف الذكي</p>
+  </header>
+
+  <div class="meta">
+    <strong>تاريخ السريان:</strong> 25 مايو 2026 &nbsp;|&nbsp;
+    <strong>آخر تحديث:</strong> 25 مايو 2026 &nbsp;|&nbsp;
+    <strong>إصدار التطبيق:</strong> 1.0.0
+  </div>
+
+  <p>
+    أهلاً بك في <strong>WALLTIK (تطبيق متابعة المصاريف الذكي)</strong>، وهو تطبيق إدارة مالية شخصية يعمل بدون إنترنت بالكامل،
+    من تطوير <strong>Ovixtik</strong>. توضح هذه السياسة كيف يتعامل التطبيق مع المعلومات عند استخدامك له.
+  </p>
+
+  <div class="highlight">
+    <strong>وعدنا الأساسي:</strong> WALLTIK تطبيق <strong>يعمل بدون إنترنت بالكامل</strong>.
+    جميع بياناتك المالية محفوظة حصرياً على جهازك. نحن لا نجمع أو ننقل أو نبيع أو نشارك أو نصل إلى أي من بياناتك الشخصية
+    أو المالية. لا حاجة لإنشاء حساب أو تسجيل دخول أو إدخال بريد إلكتروني.
+  </div>
+
+  <h2>1. المعلومات التي نتعامل معها</h2>
+
+  <h3>1.1 ما يحفظه WALLTIK على جهازك</h3>
+  <p>جميع البيانات تُحفظ محلياً في مساحة التخزين الخاصة بالتطبيق ولا تُنقل لأي خادم. تشمل البيانات:</p>
+  <ul>
+    <li><strong>السجلات المالية:</strong> المصاريف والدخل والديون والمدخرات والفئات التي تدخلها يدوياً.</li>
+    <li><strong>تفضيلات التطبيق:</strong> اللغة، العملة، وضع المظهر، اللون الأساسي، وإعدادات الإشعارات.</li>
+    <li><strong>إعدادات الأمان:</strong> رمز PIN المكوّن من 4 أرقام وتفضيلات البصمة.</li>
+    <li><strong>صور الفواتير الاختيارية:</strong> الصور التي تختار إرفاقها بسجلات المصاريف (ميزة Premium).</li>
+    <li><strong>أعلام الإعداد:</strong> حالة التشغيل الأول، إكمال الإعداد الأولي، وعلامات الترقية.</li>
+  </ul>
+
+  <h3>1.2 ما لا يجمعه WALLTIK</h3>
+  <ul>
+    <li>لا معرّفات شخصية (الاسم، البريد، الهاتف، العنوان).</li>
+    <li>لا معرّفات جهاز (IMEI، معرّف إعلاني، معرّف تثبيت).</li>
+    <li>لا بيانات موقع جغرافي من أي نوع.</li>
+    <li>لا قراءة لجهات الاتصال أو التقويم أو الرسائل أو سجل المكالمات.</li>
+    <li>لا تحليلات استخدام أو قياسات سلوك.</li>
+    <li>لا تقارير أعطال أو تتبع أخطاء.</li>
+    <li>لا بيانات اعتماد حساب — التطبيق ليس فيه شاشة تسجيل دخول أصلاً.</li>
+  </ul>
+
+  <h2>2. أماكن تخزين البيانات</h2>
+
+  <h3>2.1 قاعدة بيانات SQLite المحلية</h3>
+  <p>محفوظة في المجلد الخاص بالتطبيق ولا يمكن للتطبيقات الأخرى الوصول إليها. تحتوي جداول للمصاريف والدخل وتاريخ الدخل والفئات المخصصة والديون والديون المحذوفة (سلة المهملات).</p>
+
+  <h3>2.2 التخزين المحلي (مفتاح/قيمة)</h3>
+  <p>يُستخدم للتفضيلات والإعدادات مثل اللغة، وضع المظهر، PIN، تفعيل البصمة، وعلامة Premium.</p>
+
+  <h3>2.3 التخزين الخاص للملفات</h3>
+  <p>صور الفواتير المرفقة بالمصاريف تُحفظ في المجلد الخاص بالتطبيق ولا تظهر للتطبيقات الأخرى.</p>
+
+  <h2>3. الصلاحيات المطلوبة</h2>
+  <p>يطلب WALLTIK الصلاحيات التالية في Android فقط عند الحاجة لميزة معينة:</p>
+
+  <table>
+    <thead>
+      <tr><th>الصلاحية</th><th>الغرض</th><th>متى تُطلب</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>الكاميرا</strong></td><td>التقاط صور للفواتير</td><td>فقط عند الضغط على "إرفاق فاتورة"</td></tr>
+      <tr><td><strong>التخزين / الصور</strong></td><td>اختيار صور موجودة أو ملفات النسخ الاحتياطي</td><td>فقط عند اختيار صورة أو استعادة نسخة</td></tr>
+      <tr><td><strong>البصمة / الوجه</strong></td><td>فتح التطبيق بالبصمة أو الوجه</td><td>فقط عند تفعيل البصمة من الإعدادات</td></tr>
+      <tr><td><strong>الإشعارات</strong></td><td>عرض تذكيرات محلية وتنبيهات الإنفاق</td><td>عند أول محاولة إشعار (Android 13+)</td></tr>
+      <tr><td><strong>الاهتزاز</strong></td><td>اهتزاز خفيف عند الضغط على لوحة PIN</td><td>تلقائي بدون طلب</td></tr>
+      <tr><td><strong>الإنترنت</strong></td><td>فتح الروابط الخارجية في متصفح النظام</td><td>فقط عند الضغط على رابط في الإعدادات</td></tr>
+    </tbody>
+  </table>
+
+  <p>WALLTIK <strong>لا يطلب</strong> صلاحيات الخدمات الخلفية أو التشغيل عند الإقلاع أو SMS أو الهاتف.</p>
+
+  <h2>4. النسخ الاحتياطي والاستعادة (بمبادرة المستخدم فقط)</h2>
+
+  <h3>4.1 إنشاء نسخة احتياطية</h3>
+  <p>عند الضغط على "نسخ احتياطي" في الإعدادات، ينشئ WALLTIK ملف ZIP يحتوي قاعدة بياناتك وصور الفواتير. يُمرَّر الملف لقائمة المشاركة في نظام جهازك — وأنت تختار إلى أين تُرسله (Gmail، Drive، USB، إلخ). <strong>التطبيق نفسه لا يرفع هذا الملف لأي مكان.</strong></p>
+
+  <h3>4.2 استعادة نسخة احتياطية</h3>
+  <p>يمكنك اختيار ملف ZIP من جهازك عبر منتقي الملفات في النظام. يستبدل WALLTIK قاعدة البيانات وملفات الفواتير المحلية بمحتوى النسخة. لا تخرج أي بيانات من جهازك خلال هذه العملية.</p>
+
+  <h2>5. الخدمات الخارجية</h2>
+  <p>WALLTIK <strong>لا يدمج</strong> أياً مما يلي:</p>
+  <ul>
+    <li>لا Firebase أو Google Analytics أو Crashlytics</li>
+    <li>لا AdMob أو أي شبكات إعلانات</li>
+    <li>لا Mixpanel أو Sentry أو أي SDK تتبع</li>
+    <li>لا SDK لتسجيل الدخول أو المشاركة عبر وسائل التواصل</li>
+    <li>لا مزامنة سحابية أو خدمات نسخ احتياطي عن بُعد</li>
+  </ul>
+
+  <p>يستخدم التطبيق فقط حزم Flutter مفتوحة المصدر للوظائف المحلية. لا تتصل أي من هذه الحزم بالإنترنت نيابة عن WALLTIK.</p>
+
+  <h2>6. الروابط الخارجية</h2>
+  <p>يحتوي WALLTIK في شاشة الإعدادات على روابط تفتح متصفح نظامك. التطبيق نفسه <strong>لا</strong> يرسل أي بيانات لهذه الروابط — متصفحك يفتحها بشكل مستقل:</p>
+  <ul>
+    <li>رابط لتطبيقات المطوّر الأخرى على Google Play</li>
+    <li>رابط لتقييم WALLTIK على Google Play</li>
+    <li>رابط لسياسة الخصوصية</li>
+    <li>رابط بريد إلكتروني لدعم العملاء</li>
+  </ul>
+
+  <h2>7. تنبيه حول اشتراك Premium</h2>
+  <div class="warning">
+    <strong>إفصاح مهم:</strong> ميزة الترقية لـ Premium في الإصدار الحالي من WALLTIK هي <strong>علم محلي فقط</strong>.
+    لا يوجد حالياً معالجة دفع حقيقية أو تكامل مع Google Play Billing.
+    لا تُجمع ولا تُنقل أي معلومات دفع. قد تُضاف عمليات شراء داخل التطبيق في إصدارات لاحقة،
+    وعندها ستتم المعاملات حصرياً عبر <strong>Google Play Billing</strong> وفق
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>.
+  </div>
+
+  <h2>8. الأمان</h2>
+  <ul>
+    <li><strong>قفل PIN:</strong> رمز اختياري من 4 أرقام للدخول للتطبيق.</li>
+    <li><strong>المصادقة البيومترية:</strong> فتح اختياري بالبصمة أو الوجه باستخدام أمان جهازك المدمج.</li>
+    <li><strong>التخزين الخاص بالتطبيق:</strong> جميع البيانات معزولة ومحمية بنظام تشغيل Android.</li>
+  </ul>
+
+  <div class="warning">
+    <strong>ملاحظة شفافية:</strong> في الإصدار الحالي، رمز PIN محفوظ في التخزين المحلي بدون تشفير.
+    سيُنقَل إلى التخزين الآمن في تحديث قادم. وبما أن البيانات لا تغادر جهازك أبداً، فإن الخطر العملي مقتصر على من يصل لجهازك فعلياً.
+  </div>
+
+  <h2>9. الاحتفاظ بالبيانات وحذفها</h2>
+  <p>بياناتك تبقى على جهازك طالما WALLTIK مثبَّت. لحذف جميع بياناتك:</p>
+  <ul>
+    <li>إلغاء تثبيت التطبيق، أو</li>
+    <li>مسح بيانات التطبيق من إعدادات الجهاز ← التطبيقات ← WALLTIK ← التخزين ← مسح البيانات</li>
+  </ul>
+  <p>كلا الإجراءين يحذف نهائياً جميع السجلات المالية والإعدادات وصور الفواتير. ملفات النسخ الاحتياطي التي حفظتها خارجياً لا تتأثر وتبقى تحت سيطرتك.</p>
+
+  <h2>10. خصوصية الأطفال</h2>
+  <p>
+    WALLTIK لا يستهدف الأطفال دون سن 13 عاماً ولا يحتوي على محتوى طرف ثالث موجّه للأطفال.
+    وبما أن التطبيق لا يجمع أي معلومات شخصية من أي مستخدم، فهو لا يجمع أي بيانات من الأطفال.
+    الحد الأدنى المدعوم لنسخة Android هو 5.0 (Lollipop).
+  </p>
+
+  <h2>11. المستخدمون الدوليون والامتثال</h2>
+  <p>
+    يدعم WALLTIK 11 لغة (العربية، الإنجليزية، الإسبانية، الإيطالية، الألمانية، الفرنسية، البرتغالية، التركية، الصينية، الهندية، الفارسية)
+    وهو متاح في جميع أنحاء العالم. وبما أنه لا تُنقل أو تُحفظ أي بيانات على خوادم خارجية، فلا توجد نقل بيانات دولي.
+  </p>
+  <p>WALLTIK مصمم للامتثال للوائح الخصوصية الرئيسية بما فيها:</p>
+  <ul>
+    <li><strong>اللائحة الأوروبية العامة لحماية البيانات (GDPR)</strong></li>
+    <li><strong>قانون خصوصية مستهلكي كاليفورنيا (CCPA)</strong></li>
+    <li>متطلبات <strong>Google Play Data Safety</strong></li>
+    <li><strong>قانون حماية خصوصية الأطفال على الإنترنت (COPPA)</strong></li>
+  </ul>
+
+  <h2>12. حقوقك</h2>
+  <p>لديك سيطرة كاملة على بياناتك في كل الأوقات:</p>
+  <ul>
+    <li><strong>الوصول:</strong> جميع بياناتك مرئية داخل التطبيق.</li>
+    <li><strong>التعديل:</strong> تعديل أو حذف أي سجل في أي وقت.</li>
+    <li><strong>التصدير:</strong> إنشاء نسخ احتياطية وقتما تريد.</li>
+    <li><strong>الحذف:</strong> إلغاء تثبيت التطبيق يحذف كل البيانات نهائياً.</li>
+    <li><strong>قابلية النقل:</strong> ملفات النسخ الاحتياطي يمكن حفظها أو نقلها بحرية.</li>
+  </ul>
+
+  <h2>13. التغييرات على سياسة الخصوصية</h2>
+  <p>
+    قد نُحدّث هذه السياسة من حين لآخر لعكس التغييرات في التطبيق أو القوانين المعمول بها.
+    تاريخ "آخر تحديث" أعلى الصفحة يوضح آخر مرة تم فيها تعديل السياسة.
+    التغييرات الجوهرية ستُعلَن من خلال شاشة إعدادات التطبيق وقائمة Google Play.
+    الاستمرار في استخدام WALLTIK بعد هذه التحديثات يُعدّ موافقة على السياسة المعدّلة.
+  </p>
+
+  <h2>14. معلومات التواصل</h2>
+  <div class="contact-box">
+    <p>لأي أسئلة أو استفسارات أو طلبات بخصوص سياسة الخصوصية أو التطبيق، تواصل معنا:</p>
+    <p>
+      <strong>المطوّر:</strong> Ovixtik<br>
+      <strong>بريد الدعم:</strong> <a href="mailto:support@primepharma.tech?subject=WALLTIK%20Privacy%20Inquiry">support@primepharma.tech</a><br>
+      <strong>التطبيق:</strong> WALLTIK – تطبيق متابعة المصاريف الذكي<br>
+      <strong>الحزمة:</strong> <code>com.naifoo.smart_expense</code>
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Ovixtik. جميع الحقوق محفوظة.<br>
+    هذه السياسة تنطبق حصرياً على تطبيق WALLTIK للهواتف المحمولة.
+  </footer>
+
+</div>
+</div>
+
+<script>
+  function switchLang(lang) {
+    // Toggle body direction
+    document.body.classList.toggle('rtl', lang === 'ar');
+    document.documentElement.lang = lang;
+
+    // Show selected content
+    document.querySelectorAll('.lang-content').forEach(el => {
+      el.classList.remove('active');
+    });
+    document.getElementById('lang-' + lang).classList.add('active');
+
+    // Update buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Update page title
+    document.title = lang === 'ar'
+      ? 'سياسة الخصوصية - WALLTIK'
+      : 'Privacy Policy - WALLTIK';
+
+    // Save preference
+    try { localStorage.setItem('walltik_lang', lang); } catch(e) {}
+  }
+
+  // Load saved language on page load
+  try {
+    const savedLang = localStorage.getItem('walltik_lang');
+    if (savedLang === 'ar') {
+      document.body.classList.add('rtl');
+      document.documentElement.lang = 'ar';
+      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-ar').classList.add('active');
+      document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === 1);
+      });
+      document.title = 'سياسة الخصوصية - WALLTIK';
+    }
+  } catch(e) {}
+</script>
+
+</body>
+</html>
