@@ -60,7 +60,7 @@
       <td align="center"><b>والتك</b></td>
       <td align="center"><b>Walltik</b></td>
       <td>تتبع المصاريف اليومية</td>
-      <td align="center">⚪ <i>قريباً</i></td>
+      <td align="center">🟢 <b>منشور</b></td>
       <td align="center"><a href="./walltik/">عرض ←</a></td>
     </tr>
     <tr>
@@ -68,7 +68,7 @@
       <td align="center"><b>دبتك</b></td>
       <td align="center"><b>Debtik</b></td>
       <td>إدارة الديون والمستحقات</td>
-      <td align="center">⚪ <i>قريباً</i></td>
+      <td align="center">🟢 <b>منشور</b></td>
       <td align="center"><a href="./debtik/">عرض ←</a></td>
     </tr>
   </tbody>
