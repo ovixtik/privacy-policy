@@ -48,6 +48,14 @@
       <td align="center"><a href="./invotik/">عرض ←</a></td>
     </tr>
     <tr>
+      <td align="center"><img src="./assets/gymtik.png" width="48" height="48" /></td>
+      <td align="center"><b>جمتك</b></td>
+      <td align="center"><b>GYMTIK</b></td>
+      <td>اللياقة وتتبّع التمارين للمبتدئين</td>
+      <td align="center">⚪ <i>قريباً</i></td>
+      <td align="center"><a href="./gymtik/">عرض ←</a></td>
+    </tr>
+    <tr>
       <td align="center"><img src="./assets/walltik.png" width="48" height="48" /></td>
       <td align="center"><b>والتك</b></td>
       <td align="center"><b>Walltik</b></td>
@@ -75,6 +83,7 @@
 <td width="50%" valign="top">
 
 ### ما نلتزم به ✅
+
 - 🔒 **بيانات محلية** على جهازك فقط
 - 🚫 **لا خوادم** خارجية
 - 🚫 **لا مشاركة** مع أطراف ثالثة
@@ -85,6 +94,7 @@
 <td width="50%" valign="top">
 
 ### ما لا نفعله ❌
+
 - ❌ لا نبيع بياناتك
 - ❌ لا نتتبع موقعك
 - ❌ لا نصل لجهات اتصالك
@@ -106,6 +116,7 @@ privacy-policy/
 ├── 📁 assets/          ← أيقونات التطبيقات
 ├── 📁 hesabatik/       ← سياسة Hesabatik
 ├── 📁 invotik/         ← سياسة Invotik
+├── 📁 gymtik/          ← سياسة GYMTIK
 ├── 📁 walltik/         ← سياسة Walltik
 └── 📁 debtik/          ← سياسة Debtik
 ```
